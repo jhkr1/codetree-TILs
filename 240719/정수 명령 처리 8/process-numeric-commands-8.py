@@ -83,7 +83,10 @@ class DoublyLinkedList:
         return self.node_num
 
     def empty(self):
-        return self.node_num == 0
+        if self.node_num == 0:
+            print(1)
+        else:
+            print(0)
 
     def front(self):
         if self.head == None:
@@ -124,8 +127,7 @@ for i in range(N):
         print(dll.size())
 
     elif command == 'empty':
-        if dll.empty() == 0:
-            print(0)
+        dll.empty()
 
     elif command == 'front':
         print(dll.front())
